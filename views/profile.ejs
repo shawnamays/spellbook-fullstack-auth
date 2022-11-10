@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Spellbook</title>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="page-header text-center">
+      <h1><span class="fa fa-anchor"></span>Home Spellbook</h1>
+      <a href="/logout" class="btn btn-default btn-sm">Logout</a>
+    </div>
+
+    <div class="row">
+
+      <!-- LOCAL INFORMATION  -->
+      <div class="col-sm-6">
+        <div class="well">
+          <h2>Add a new spell</h2>
+          <form action="/spells" class="spellForm" method="POST">
+            <!--this is where I want people to be able to input a new ingredient for their spellbook-->
+          
+            <!--this is the dropdown menu HTML code that shows different spells the person can use-->
+            <label for="spell-types">Choose a spell:</label>
+
+            <select name="spellType" id="spellType">
+              <option value="love">Love</option>
+              <option value="money">Money</option>
+              <option value="legal">Legal</option>
+              <option value="domination">Domination</option>
+            </select>
+            <input type="text" placeholder="enter the name of your spell" name="spellName">
+            <textarea name="ingredients" placeholder="enter your ingredients"></textarea>
+            
+            
+            <textarea name="ritual" placeholder="any steps or things to remember?"></textarea>
+            <button type="submit">Submit</button>
+
+          </form>
+
+        </div>
+      </div>
+
+      <!--this is where the spells are displayed-->
+      <div class="col-sm-6">
+        <h3>My Spells & Ingredients</h3>
+      
+        
+  
+
+        <ul class="spells">
+          <% for(var i=0; i<spells.length; i++) {%>
+            
+            
+              <li class="message">
+                <h4>Spell Type</h4>
+                <span>
+                  <%= spells[i].spellType %>
+                </span>
+
+                <h4>Spell Name</h4>
+                <span>
+                  <%= spells[i].spellName %>
+                </span>
+
+                <h4>My Ingredients</h4>
+                <span><%= spells[i].ingredients %></span>
+
+                <h4>Ritual Steps</h4>
+                <p>
+                  <%= spells[i].ritual %>
+                </p>
+                <button onclick="edit('<%= spells[i]._id %>')">Edit My Spell</button>
+
+                <button onclick="deleted('<%= spells[i]._id %>')">Delete & Start Over</button>
+              
+              </li>
+            <% } %>
+        </ul>
+            
+       <!--area for naming spell
+      area for typing out the recipe/ritual
+    submit button-->
+
+     
+      </div>
+  
+
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
