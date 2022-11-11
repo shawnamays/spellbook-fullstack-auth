@@ -1,6 +1,9 @@
 body{
   padding-top:80px;
   word-wrap:break-word;
+  background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/46b7efad-4409-43bd-aa54-2884b765551c/d5yeqas-bfcba1dd-e96a-4222-b86c-61a7de006426.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzQ2YjdlZmFkLTQ0MDktNDNiZC1hYTU0LTI4ODRiNzY1NTUxY1wvZDV5ZXFhcy1iZmNiYTFkZC1lOTZhLTQyMjItYjg2Yy02MWE3ZGUwMDY0MjYuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.iQ4NS3XIJzD-yKRuaVKVC56p7oBPu3BqueGX38yoCLM');
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 img{
   height: 200px;
