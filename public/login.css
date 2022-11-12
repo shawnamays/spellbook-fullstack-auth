@@ -1,0 +1,12 @@
+body {
+    background-image: url(https://images.unsplash.com/photo-1518281579100-d51bcf505b0e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1587&q=80);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: white;
+    font-family: 'Nova Script', cursive;
+}
+
+h1 {
+    font-family: 'Nova Script', cursive;
+    font-size: 70px;
+}
