@@ -21,7 +21,9 @@
       <!-- LOCAL INFORMATION  -->
       <div class="col-sm-6">
         <div class="well">
+
           <h2>Add a new spell</h2>
+
           <form action="/spells" class="spellForm" method="POST">
             <!--this is where I want people to be able to input a new ingredient for their spellbook-->
           
@@ -34,6 +36,8 @@
               <option value="legal">Legal</option>
               <option value="domination">Domination</option>
             </select>
+
+
             <input type="text" placeholder="enter the name of your spell" name="spellName">
             <textarea name="ingredients" placeholder="enter your ingredients"></textarea>
             
@@ -58,6 +62,7 @@
             
             
               <li class="message">
+
                 <h4>Spell Type</h4>
                 <span>
                   <%= spells[i].spellType %>
@@ -75,6 +80,7 @@
                 <p>
                   <%= spells[i].ritual %>
                 </p>
+                
                 <button onclick="edit('<%= spells[i]._id %>')">Edit My Spell</button>
 
                 <button onclick="deleted('<%= spells[i]._id %>')">Delete & Start Over</button>
