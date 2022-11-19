@@ -2,6 +2,4 @@
 
 A Book of Shadows to keep track of spells, ingredients, and instructions.  Made using html/css, javascript, node.js, bootstrap, mongodb.
 
-## Credit
-
-Modified from Scotch.io's auth tutorial
+<a href="https://web-production-8acd.up.railway.app/">View By Clicking Here</a>
